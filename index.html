@@ -5,11 +5,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <h1>Employee Management System</h1>
 
-    <input type="text" placeholder="Employee Name">
-    <input type="text" placeholder="Employee ID">
+<input type="text" id="name" placeholder="Employee Name">
+<input type="text" id="empId" placeholder="Employee ID">
+<input type="text" id="department" placeholder="Department">
+<input type="number" id="salary" placeholder="Salary">
 
-    <button>Add Employee</button>
+<button onclick="addEmployee()">Add Employee</button>
+
+<br><br>
+
+<table border="1" align="center">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>ID</th>
+            <th>Department</th>
+            <th>Salary</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+
+    <tbody id="employeeTable"></tbody>
+</table>
+
+<script src="script.js"></script>
 </body>
 </html>
